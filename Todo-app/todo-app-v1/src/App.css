@@ -1,0 +1,19 @@
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 10px;
+  color: blue;
+}
+
+input {
+  width: 100%;
+}
+.items-cont {
+  text-align: left;
+}
+.todo-row {
+  margin: 8px 5px;
+}
+.todo-btn {
+  min-width: 80px;
+}
