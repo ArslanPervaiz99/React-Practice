@@ -1,4 +1,5 @@
+import design from "./AppHeading.module.css";
 function AppHeading() {
-  return <h1>Todo App</h1>;
+  return <h1 className={design.todoHead}>Todo App</h1>;
 }
 export default AppHeading;
