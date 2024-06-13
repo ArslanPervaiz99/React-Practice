@@ -1,0 +1,10 @@
+.calcCont {
+  border: 1px solid black;
+  width: 250px;
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #90e0ef;
+  justify-content: center;
+  align-self: center;
+}
