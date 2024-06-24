@@ -1,0 +1,9 @@
+.inputBox {
+  margin: 10px;
+  width: 86%;
+  font-size: 30px;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding: 5px 0 5px 10px;
+  outline: none;
+}
