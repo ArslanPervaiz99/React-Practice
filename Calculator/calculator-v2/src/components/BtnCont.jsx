@@ -1,5 +1,5 @@
 import design from "./BtnCont.module.css";
-const BtnCont = () => {
+const BtnCont = ({ onButtonClick }) => {
   const btnName = [
     "1",
     "2",
@@ -17,11 +17,17 @@ const BtnCont = () => {
     "0",
     ".",
     "+",
+    "=",
   ];
   return (
     <div className={design.btnCont}>
       {btnName.map((buttonName) => (
-        <button className={design.btn}>{buttonName}</button>
+        <button
+          className={design.btn}
+          onClick={() => onButtonClick(buttonName)}
+        >
+          {buttonName}
+        </button>
       ))}
     </div>
   );
