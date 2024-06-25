@@ -3,9 +3,10 @@ import AddTodo from "./components/AddTodo";
 import "./App.css";
 
 import TodoItems from "./components/TodoItems";
+import { useState } from "react";
 
 function App() {
-  const addTodoItems = [
+  const addTodoItems1 = [
     {
       name: "Arsina",
       date: "5/2/1989",
@@ -24,11 +25,18 @@ function App() {
     },
   ];
 
+  const [addTodoItems, setTodoItems] = useState(addTodoItems1);
+
+  const handleAddNewItem = (itemName, itemDate) => {
+    const todoItemAdded = [...addTodoItems, { name: itemName, date: itemDate }];
+    setTodoItems(todoItemAdded);
+  };
+
   return (
     <>
       <center className="main-cont">
         <AppHeading />
-        <AddTodo />
+        <AddTodo onAddNewTodo={handleAddNewItem} />
         <TodoItems newTodoItems={addTodoItems} />
       </center>
     </>
