@@ -1,14 +1,14 @@
-
-
 input {
   width: 100%;
+  padding: 6px 3px;
 }
 .items-cont {
   text-align: left;
+  width: 100%;
 }
 .todo-row {
-  margin: 8px 5px;
+  margin: 15px 8px;
 }
 .todo-btn {
-  min-width: 80px;
+  min-width: 75px;
 }
