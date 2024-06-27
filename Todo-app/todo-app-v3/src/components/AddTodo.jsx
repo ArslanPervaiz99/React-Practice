@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function AddTodo({ onAddNewTodo }) {
-  const [addTodoName, setAddTodoName] = useState();
-  const [addTodoDate, setAddTodoDate] = useState();
+  const [addTodoName, setAddTodoName] = useState("");
+  const [addTodoDate, setAddTodoDate] = useState("");
 
   const handleTodoInput = (e) => {
     setAddTodoName(e.target.value);
