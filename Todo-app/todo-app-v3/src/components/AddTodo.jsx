@@ -12,14 +12,15 @@ function AddTodo({ onAddNewTodo }) {
     setAddTodoDate(e.target.value);
   };
 
-  const handleAddBtnClick = () => {
+  const handleAddBtnClick = (e) => {
+    e.preventDefault();
     onAddNewTodo(addTodoName, addTodoDate);
     setAddTodoName("");
     setAddTodoDate("");
   };
   return (
     <div className="container text-center">
-      <div className="row todo-row">
+      <form className="row todo-row" onSubmit={handleAddBtnClick}>
         <div className="col-5">
           <input
             type="text"
@@ -32,15 +33,11 @@ function AddTodo({ onAddNewTodo }) {
           <input type="date" value={addTodoDate} onChange={handleTodoDate} />
         </div>
         <div className="col-2">
-          <button
-            type="button"
-            className="btn btn-success todo-btn"
-            onClick={handleAddBtnClick}
-          >
+          <button className="btn btn-success todo-btn">
             <MdAddTask className="new-btn" />
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
