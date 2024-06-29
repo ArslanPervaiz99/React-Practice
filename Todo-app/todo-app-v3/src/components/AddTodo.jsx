@@ -5,7 +5,7 @@ function AddTodo({ onAddNewTodo }) {
   // const [addTodoName, setAddTodoName] = useState("");
   // const [addTodoDate, setAddTodoDate] = useState("");
 
-  // use this one instead of useState
+  /** use this one instead of useState kio k us main har baar change pr page repaint hota tha is liay hum ny baar bar repaint sy bachnay k liay hook useRef ko use kia hay  */
   const addTodoElement = useRef();
   const addTodoDateElement = useRef();
 
